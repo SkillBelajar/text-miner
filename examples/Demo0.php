@@ -1,5 +1,5 @@
 <?php
-
+include "../TextMiner.php";
 //Demo: Top Keywords as a comma separated string
 
 $tm = new TextMiner();
@@ -11,9 +11,7 @@ $tm->addText("Data mining text can also be added this way.");
 
 $tm->convertToLower = TRUE; // optional
 
-$tm->process();//should be called before accessing keywords
+$tm->process(); //should be called before accessing keywords
 
-printa($tm->getTopNGrams(10,false));
+printa($tm->getTopNGrams(10, false));
 echo $tm->printSummary();
-        
-?>
