@@ -14,5 +14,3 @@ $tm->process();//should be called before accessing keywords
 
 printa($tm->getTopNGrams(10));
 echo $tm->printSummary();
-        
-?>
